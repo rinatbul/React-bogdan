@@ -1,5 +1,14 @@
-function Post(){
-    return <h1>This is Post</h1>
+import './Post.css'
+
+function Post({id,body,title, userId}) {
+  return (
+    <div className='post'>
+      <small>{id}</small>
+      <h1>{title}</h1>
+      <p>{body}</p>
+      <h3>User ID: {userId}</h3>
+    </div>
+  )
 }
 
 export default Post
